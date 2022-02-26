@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:riverpod_sample/views/counter_list_page.dart';
+import 'package:riverpod_sample/views/todo_list_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -18,10 +19,10 @@ class HomePage extends StatelessWidget {
               onPressed: () => CounterListPage.show(context),
               child: const Text('Counter'),
             ),
-            // ElevatedButton(
-            //   onPressed: () => TodoListPage.show(context),
-            //   child: const Text('TODO'),
-            // ),
+            ElevatedButton(
+              onPressed: () => TodoListPage.show(context),
+              child: const Text('TODO'),
+            ),
           ],
         ),
       ),
